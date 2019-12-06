@@ -33,14 +33,14 @@
     <div class="tonav-content clearfix">
       <ul class=" clearfix">
         <li><a href="./index.html" target="target">进入官网<s></s></a></li>
-        <li><a href="#">注册账号<s></s></a></li>
+        <li><a href="#" class="zhuce">注册账号<s></s></a></li>
         <li><a href="#">游戏充值<s></s></a></li>
         <li><a href="#">客服中心<s></s></a></li>
         <li><a href="#">军需商店<s></s></a></li>
       </ul>
     </div>
     <div class="tonav-right">
-      <a href="#"></a>
+      <a href="./download.html" target="target"></a>
     </div>
   </div>
   <!-- 头部导航栏结束 -->
@@ -64,9 +64,9 @@
   <div class="wuqi">
     <img src="./img/bg_wuqi.jpg" alt="">
     <ul>
-      <li><a href="#">武器展示 <img src="./img/weapon.jpg" alt=""></a></li>
+      <li><a href="./index.html#wuqi" target="tarfet">武器展示 <img src="./img/weapon.jpg" alt=""></a></li>
       <li><a href="#">活动专区 <img src="./img/wuqi_2.jpg" alt=""></a></li>
-      <li><a href="#">攻略视频 <img src="./img/wuqi_3.png" alt=""></a></li>
+      <li><a href="./index.html#sp" target="tarfet">攻略视频 <img src="./img/wuqi_3.png" alt=""></a></li>
     </ul>
     <div class="guanwang">
       <a href="#">进入官网</a>
@@ -103,5 +103,12 @@
       </div>
     </div>
 </body>
-
+<script src="./js/jquery-1.12.4.js"></script>
+<script>
+$(function(){
+  $(".zhuce").click(function(){
+    alert("您所有的账号注册流程，只能在客户端内完成，请您先下载客户端。")
+  })
+})
+</script>
 </html>
