@@ -261,7 +261,6 @@
 .carousel {
   width: 1300px;
   height: 380px;
-  background-color: pink;
   position: absolute;
   top: 347px;
   left: 310px;
@@ -277,13 +276,20 @@
 .carousel-left .carousel-left-top {
   width: 3520px;
   height: 332px;
-  background-color: red;
+}
+.carousel-left-top {
+  position: relative;
+  width: 880px;
+  height: 332px;
+  /* background: url(../img/7db283edaede60e18de374a99f5391801574159637.jpg); */
 }
 .carousel-left-top li {
+  position: absolute; 
+  top: 0;
+  left: 0; 
   width: 880px;
   background-color: gold;
   height: 332px;
-  float: left;
 }
 .carousel-left-bottom {
   width: 880px;
@@ -299,7 +305,7 @@
   line-height: 48px;
   color: #fff;
 }
-.carousel-left-bottom .list {
+.carousel-left-bottom li.active {
   background-color: #132b40;
 }
 
@@ -948,17 +954,17 @@
 /*武器结束 */
 
 /*地图开始 */
-.game-tab2-box {
-  /* padding-top: 50px; */
-}
+
 .game-tab2-box-item {
   display: none;
   position: relative;
   color: #fff;
+  margin-top: 50px;
 }
 .col-text {
   width: 340px;
   margin-right: 65px;
+  float: left;
 }
 .col-text h3 {
   font-size: 48px;
@@ -968,10 +974,13 @@
 }
 .col-text p {
   margin: 30px 0;
+  font-size: 14px;
+  line-height: 20px;
 }
 .col-text li {
   position: relative;
   padding-left: 10px;
+  padding-top: 10px;
 }
 .col-text li:before {
   content: "";
@@ -1303,22 +1312,25 @@
 .m-list-vertical li span {
   color: #fff;
 }
-.gonglue-col  .m-list-item {
+.gonglue-col .m-list-item {
   display: none;
 }
-.gonglue-col  .m-list-item.active {
+.gonglue-col .m-list-item.active {
   display: block;
 }
 .core .link-btn {
   width: 635px;
-}.m-list-imgtxt li {
+}
+.m-list-imgtxt li {
   float: left;
   width: 278px;
   height: 188px;
   margin-bottom: 17px;
-}.m-list-imgtxt li:not(:nth-of-type(2n)) {
+}
+.m-list-imgtxt li:not(:nth-of-type(2n)) {
   margin-right: 20px;
-}.m-list-imgtxt {
+}
+.m-list-imgtxt {
   overflow: hidden;
   margin-top: 36px;
 }
@@ -1326,10 +1338,12 @@
   width: 278px;
   height: 147px;
   overflow: hidden;
-}.m-list-imgtxt .item .pic img {
+}
+.m-list-imgtxt .item .pic img {
   width: 100%;
   height: 100%;
-}.m-list-imgtxt .item h3 {
+}
+.m-list-imgtxt .item h3 {
   color: #fff;
   font-size: 16px;
   height: 40px;
@@ -1339,7 +1353,6 @@
   cursor: pointer;
   font-weight: 400;
 }
-
 
 .footer {
   height: 221px;
@@ -1428,8 +1441,6 @@
 .footer-w .footer-icon4:hover img {
   display: block;
 }
-
-
 
 .bottom {
   height: 160px;
