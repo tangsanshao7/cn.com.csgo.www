@@ -1,3 +1,4 @@
+/* 头部开始 */
 .navtop {
   width: 100%;
   height: 114px;
@@ -241,7 +242,8 @@
   left: 58px;
   font-size: 16px;
 }
-
+/* 头部结束 */
+/* 主体开始 */
 .main {
   /* margin-top: 116px; */
   position: relative;
@@ -284,9 +286,9 @@
   /* background: url(../img/7db283edaede60e18de374a99f5391801574159637.jpg); */
 }
 .carousel-left-top li {
-  position: absolute; 
+  position: absolute;
   top: 0;
-  left: 0; 
+  left: 0;
   width: 880px;
   background-color: gold;
   height: 332px;
@@ -362,7 +364,8 @@
   transition: all 1s;
   transform: rotateY(360deg);
 }
-
+/* 主体结束 */
+/* 新闻部分开始 */
 .news {
   width: 100%;
   height: 855px;
@@ -618,7 +621,8 @@
 .news-inner-right a:hover {
   background-color: hsla(0, 0%, 100%, 0.25);
 }
-
+/* 新闻部分结束 */
+/* 武器部分开始 */
 .referral {
   position: relative;
   height: 890px;
@@ -708,7 +712,6 @@
   line-height: 72px;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
 }
-/*武器开始 */
 
 .cont a.active {
   color: #fff;
@@ -1003,7 +1006,7 @@
   max-width: 100%;
 }
 /*地图结束 */
-
+/* 武器部分结束 */
 .dianjing {
   height: 782px;
   width: 100%;
@@ -1266,7 +1269,8 @@
 
   margin-bottom: 20px;
 }
-
+/*  电竞部分结束*/
+/* 攻略中心开始 */
 .core {
   height: 820px;
   width: 100%;
@@ -1354,6 +1358,8 @@
   font-weight: 400;
 }
 
+/* 攻略中心结束 */
+/* 底部开始  */
 .footer {
   height: 221px;
   width: 100%;
@@ -1486,3 +1492,4 @@
   float: left;
   margin-top: -2px;
 }
+/* 底部结束 */
