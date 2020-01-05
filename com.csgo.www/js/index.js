@@ -33,31 +33,31 @@ $(function () {
     $('.m-list-item').eq(indexC).addClass('active').siblings().removeClass('active');
   })
 
-  //选项卡切换
-  $('.referral-top a').click(function () {
-    indexC = $(this).index();
-    $(this).addClass('active').siblings().removeClass('active');
-    $('.cont ').eq(indexC).addClass('active').siblings().removeClass('active');
-    $('.game-tab2-box ').eq(indexC).addClass('active').siblings().removeClass('active');
-  })
-  $('.referral-wq  a').click(function () {
-    indexC = $(this).index();
-    $(this).addClass('active').eq(indexC).addClass('active').siblings().removeClass('active');
-    $('.referral-wq a').eq(indexC).addClass('active').siblings().removeClass('active');
-    $('.game-tab2-box-item ').eq(indexC).addClass('active').siblings().removeClass('active');
-  })
-  $('.weapon-tabs-item').click(function () {
-    indexC = $(this).index();
-    $(this).addClass('active').siblings().removeClass('active');
-    $('.weapon-property ').eq(indexC).addClass('active').siblings().removeClass('active');
-    $('.weapon-pic ').eq(indexC).addClass('active').siblings().removeClass('active');
-  })
-  $('.referral-ms a').click(function () {
-    indexC = $(this).index();
-    $(this).addClass('active').siblings().removeClass('active');
-    $('.referral-ms a ').eq(indexC).addClass('active').siblings().removeClass('active');
+//   //选项卡切换
+  // $('.referral-top a').click(function () {
+  //   indexC = $(this).index();
+  //   $(this).addClass('active').siblings().removeClass('active');
+  //   $('.cont ').eq(indexC).addClass('active').siblings().removeClass('active');
+  //   $('.game-tab2-box ').eq(indexC).addClass('active').siblings().removeClass('active');
+  // })
+  // $('.referral-wq  a').click(function () {
+  //   indexC = $(this).index();
+  //   $(this).addClass('active').eq(indexC).addClass('active').siblings().removeClass('active');
+  //   $('.referral-wq a').eq(indexC).addClass('active').siblings().removeClass('active');
+  //   $('.game-tab2-box-item ').eq(indexC).addClass('active').siblings().removeClass('active');
+  // })
+  // $('.weapon-tabs-item').click(function () {
+  //   indexC = $(this).index();
+  //   $(this).addClass('active').siblings().removeClass('active');
+  //   $('.weapon-property ').eq(indexC).addClass('active').siblings().removeClass('active');
+  //   $('.weapon-pic ').eq(indexC).addClass('active').siblings().removeClass('active');
+  // })
+  // $('.referral-ms a').click(function () {
+  //   indexC = $(this).index();
+  //   $(this).addClass('active').siblings().removeClass('active');
+  //   $('.referral-ms a ').eq(indexC).addClass('active').siblings().removeClass('active');
 
-  })
+  // })
   $('.referral-map a').click(function () {
     indexC = $(this).index();
     $(this).addClass('active').siblings().removeClass('active');

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="由Valve开发，完美世界代理的第一人称射击团队竞技游戏CS:GO（中文名《反恐精英：全球攻势》），即将开放国服，正统续作，席卷全球！"/>
+    <meta name="keywords"
+          content="CS,FPS,V社,射击,CSGO,CS:GO,valve,Valve,VALVE,FPS游戏,全球攻势,反恐精英,完美世界,CSGO官网,CSGO国服,CSGO预约,CS:GO预约,CS:GO官网,FPS网络游戏,第一人称射击,CSGO国服下载,CSGO国服预约,CS:GO国服预约,CS:GO国服下载,反恐精英全球攻势,反攻精英：全球攻势,反恐精英全球攻势官网,反攻精英：全球攻势官网"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="bookmark" href="../favicon.ico">
+    <title>CSGO 官方网站 - 反恐精英：全球攻势 - 正式登陆中国</title>
+    <!-- <link href="../css/lobin.css" rel="stylesheet" type="text/css"/>
+     -->
+     <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+<div class="bg" id="index">
+    <div class="rel1000">
+        <a href="../home.html"  class="logo">
+            <img src="../img/cslogo.png"/>
+        </a>
+        <div class="login_content">
+            <div class="tit">
+                <a href="javascript:;" class="ac_login">完美通行证账号登录</a>
+                <a href="javascript:;" class="co_login">二维码扫码登录</a>
+            </div>
+            <form id="form1" name="form1" class="login_form" method="post" action="/sso/login">
+                <input id="e" type="hidden" value="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjfeE0MIYsZes/HwV06/kvRw34Hmhn9WPt0feLPp1PVqdqZz1/xFvPPEAJ/lAvfqt5kyn+A06bvYXIhizTjlOzPgLE4897ihuSYXgfwcUshPZvydRLbftU6Exj5SLbv5tw4GInbgQv7RWLWOKyQA81q6lWae2Kcgd1XpDRsQNXVwIDAQAB"/>
+                <input type="hidden" name="password" id="password" value=""/>
+                <input name="continue" type="hidden" value=""/>
+                <input name="service" type="hidden" value="csgo"/>
+                <input name="location" type="hidden" value="2f"/>
+                <input type="hidden" name="needRand" value="" id="needRand"/>
+                <input name="isiframe" type="hidden" value="0"/>
+                <input name="logintype" id="logintype" type="hidden" value=""/>
+                <input type="hidden" name="autoLogin" id="autoLogin" value="1"/>
+                <div class="tips">
+                    <p><a  href="javascript:;">国服Dota2玩家</a>请使用已绑定的<br>完美通行证直接登录
+                    </p>
+                    <p class="tips_p2"><a  href="javascript:;">通过CSGO/Dota2账号找回完美通行证</a>
+                    </p>
+                </div>
+           
+                
+
+                <div class="control_con">
+                    <div class="control-group">
+                        <div class="controls">
+                            <i class="icon icon_u"></i>
+                            <input type="text" name="username" id="username" value="" title="输入您的手机号/邮箱/个性账号"
+                                   tabindex="1" placeholder="手机号/邮箱/个性账号">
+                            <i class="clearInput"></i>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <i class="icon icon_p"></i>
+                            <input type="password" id="passwd" value="" placeholder="请输入您的密码" title="输入您的密码"
+                                   maxlength="16" tabindex="1" autocorrect="off" spellcheck="false"/>
+                            <i class="clearInput"></i>
+                        </div>
+                    </div>
+
+                    <div class="control-group rand_node" style="display: none">
+                        <div id="mCaptcha" style="width: 250px;"></div>
+                        <input id="randimg" name="randimg" type="hidden"/>
+                        <input id="isAICap" name="isAICap" type="hidden"/>
+                    </div>
+                </div>
+                <div class="control_rem">
+                    <input type="checkbox" id="rememberme"/><span>记住账号</span>
+                    <a  href="javascript:;">忘记密码?</a>
+                </div>
+                <div class="control_btn">
+                    <a href="javascript:;" >登录</a>
+                </div>
+                <div class="hr_10"></div>
+                <div class="creat_btn clearfix">
+                    <a  href="javascript:;" class="creat_btn02">注册完美通行证</a>
+                </div>
+            </form>
+            <!-- 二维码登录内容 -->
+            <!-- 默认状态 -->
+            <div class="qrcode_con">
+                <div class="codetit">
+                    <h2>用完美手机令牌 扫码安全登录</h2>
+                </div>
+                <div class="code_img">
+                    <img id="qrcodeimg" src="">
+                </div>
+                <div class="qrcode_info">
+                    <p>请使用2.0及以上版本的手机令牌扫描二维码快速登录<a href="javascript:;">下载新版手机令牌</a></p>
+                </div>
+            </div>
+            <!-- 超时状态 -->
+            <div class="qrcode_con2 markfresh">
+                <div class="codewarning">
+                    <h2><span></span>扫码超时，请刷新</h2>
+                </div>
+                <a href="javascript:;" class="refresh">刷新</a>
+                <div class="qrcode_info">
+                    <p>请使用2.0及以上版本的手机令牌扫描二维码快速登录<a href="javascript:;" >下载新版手机令牌</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <div class="rel1100">
+        <dl class="foot_dl">
+            <dt>
+                <a class="wanmei" href="javascript:;" ><img
+                        src="../img/logo-wanmei.png" alt="完美世界"></a>
+                <a href="http://www.valvesoftware.com/" ><img
+                        src="..//img/logo-valve.png" alt="valve"></a>
+            </dt>
+            <dd style="z-index:103;height:30px;left:372px;top:12px;font-size:12px;font-family: Verdana,Geneva,sans-serif;"
+                class="wm_bottom_items"><a href="javascript:;" >公司介绍</a>&nbsp;&nbsp;<a
+                    href="javascript:;" >开发团队</a>&nbsp;&nbsp;<a
+                    href="javascript:;" >招聘信息</a>&nbsp;&nbsp;<a
+                    href="javascript:;" >联系我们</a>&nbsp;&nbsp;<a
+                    href="javascript:;" >法律声明</a>&nbsp;&nbsp;<a
+                    href="javascript:;" >网站地图</a>&nbsp;&nbsp;<a
+                    href="javascript:;" >客服中心</a>&nbsp;&nbsp;
+            </dd>
+            <dd>完美世界（北京）软件科技发展有限公司 版权所有<br>
+                © Valve Corporation, all rights reserved. Licensed to Perfect World Co., Ltd. in China. Valve, the Valve
+                logo, Counter-Strike, and the Counter-Strike logo are trademarks and/or registered trademarks of Valve
+                Corporation.<p>京ICP备15025398号-2 《网络文化经营许可证》编号：京网文[2016]0525-001号
+                </p></dd>
+        </dl>
+    </div>
+</div>
+
+  <!-- <script src="../lib/jQuery/jquery-1.12.4.js"></script> -->
+
+</body>
+</body>
+</html>
